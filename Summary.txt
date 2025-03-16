@@ -1,15 +1,37 @@
 ==================== Cucumber ==============================
 
 1. Feature File (3)
+
 2. Step definition
 
-3. Before/After
-4. Runner file
-5. Grouping
-6. Background Keyword
-7. DryRun
+3. Before/After:
 
-8. Assertions
-9. Better Report
-10. Data Driven Testing (Scenario Outline)
-11. Passing parameter from feature file to steps
+Hooks file:
+	1. Hooks are blocks of code that run before or after each 	scenario or each step in a scenario
+	2. The location of hooks file should be under Step Definition 	package only
+	3. It will be called before and after Each Scenario.
+
+4. Runner file:
+
+In Cucumber, while you write your tests in Gherkin (feature files), you need a way to execute these tests. This is where a JUnit runner file comes in. It's a standard Java class annotated with @RunWith(Cucumber.class) from the Cucumber-JUnit integration library.
+
+
+5. Better Report:
+We need plug in pom.xml
+
+6. Grouping:
+@tags in the feature file before scenario and the same we can mention in runner file with tags keyword.
+
+7. Background Keyword:
+
+	The Background keyword is used to define a set of steps that 	are executed before each scenario within a feature file.
+
+	It's a way to set up preconditions or initial state that is 	common to multiple scenarios in that feature.
+
+8. DryRun:
+
+9. Assertions
+
+10. Passing parameter from feature file to steps
+11. Data Driven Testing (Scenario Outline)
+12. Data Tables

@@ -1,6 +1,7 @@
 package com.automation.steps;
 
 import io.cucumber.java.en.*;
+import org.junit.Assert;
 
 public class CartSteps {
 
@@ -11,7 +12,7 @@ public class CartSteps {
     }
     @When("user click on checkout button")
     public void user_click_on_checkout_button() {
-        
+        Assert.assertTrue("There is some Error", 10==20);
        
     }
     

@@ -2,7 +2,7 @@ Feature: Validate Cart Functions
   Developer: Vold
   Tester: Kenneth
 
-
+  @Smoke @Shyam
   Scenario: Verify user can perform action on Cart Page
 #    On Login Page
     Given user open website
