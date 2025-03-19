@@ -41,4 +41,16 @@ public class LoginSteps {
     }
 
 
+    @When("user enters username {string} and password {string} valid credentials")
+    public void userEntersUsernameAndPasswordValidCredentials(String userName, String password) {
+        System.out.println("Valid Username entered on Website " + userName );
+        System.out.println("Valid Password entered on Website " + password );
+    }
+
+    @When("user enters Invalid username {string} and password {string} credentials")
+    public void userEntersInvalidUsernameAndPasswordCredentials(String userName, String password) {
+        System.out.println("Invalid Username entered on Website " + userName );
+        System.out.println("Invalid Password entered on Website " + password );
+
+    }
 }

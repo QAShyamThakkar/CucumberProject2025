@@ -15,6 +15,11 @@ Hooks file:
 
 In Cucumber, while you write your tests in Gherkin (feature files), you need a way to execute these tests. This is where a JUnit runner file comes in. It's a standard Java class annotated with @RunWith(Cucumber.class) from the Cucumber-JUnit integration library.
 
+features - path to feature file
+	glue     - package name
+	tags     - Grouping   (also we have to mention before scenario)
+	dryrun   - false
+	plugin   - html/json - Reporting
 
 5. Better Report:
 We need plug in pom.xml
@@ -28,10 +33,8 @@ We need plug in pom.xml
 
 	It's a way to set up preconditions or initial state that is 	common to multiple scenarios in that feature.
 
-8. DryRun:
+8. Assertions
 
-9. Assertions
-
-10. Passing parameter from feature file to steps
-11. Data Driven Testing (Scenario Outline)
-12. Data Tables
+9. Passing parameter from feature file to steps
+10. Data Driven Testing (Scenario Outline)
+11. Data Tables
